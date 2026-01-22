@@ -1,72 +1,201 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>iFlow Brasil</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <title>iFlow Brasil | Integrações SAP</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="iFlow Brasil – Consultoria especializada em integrações SAP, SAP CPI e SAP SuccessFactors." />
+
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f5f7fa;
-      margin: 0;
-      padding: 0;
-      color: #1f2937;
+    :root {
+      --primary: #0a2540;
+      --secondary: #2563eb;
+      --bg: #f5f7fa;
+      --text: #1f2937;
+      --light: #ffffff;
     }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
     header {
-      background: #0a2540;
+      background: linear-gradient(135deg, var(--primary), #0e3a5f);
       color: white;
+      padding: 90px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 42px;
+      margin-bottom: 16px;
+    }
+
+    header p {
+      font-size: 20px;
+      max-width: 720px;
+      margin: 0 auto 32px;
+      opacity: 0.95;
+    }
+
+    .cta {
+      display: inline-block;
+      background: var(--secondary);
+      color: white;
+      padding: 14px 32px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.2s ease;
+    }
+
+    .cta:hover {
+      background: #1d4ed8;
+    }
+
+    section {
+      max-width: 1100px;
+      margin: 80px auto;
+      padding: 0 24px;
+    }
+
+    h2 {
+      color: var(--primary);
+      font-size: 30px;
+      margin-bottom: 24px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 32px;
+    }
+
+    .card {
+      background: var(--light);
+      padding: 32px;
+      border-radius: 10px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: var(--primary);
+    }
+
+    footer {
+      background: #e5e7eb;
       padding: 40px 20px;
       text-align: center;
-    }
-    section {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-    h2 {
-      color: #0a2540;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #e5e7eb;
       font-size: 14px;
+    }
+
+    footer a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 32px;
+      }
+      header p {
+        font-size: 18px;
+      }
     }
   </style>
 </head>
+
 <body>
 
-<header>
-  <h1>iFlow Brasil</h1>
-  <p>Integração SAP com simplicidade, eficiência e fluidez</p>
-</header>
+  <!-- HERO -->
+  <header>
+    <h1>iFlow Brasil</h1>
+    <p>Integrações SAP com simplicidade, eficiência e fluidez.</p>
+    <a class="cta" href="mailto:iflowbrasil@yahoo.com">Entrar em contato</a>
+  </header>
 
-<section>
-  <h2>Sobre</h2>
-  <p>
-    A iFlow Brasil é especializada em integrações SAP, com foco em
-    SAP CPI e SAP SuccessFactors, conectando sistemas e processos
-    de forma simples e eficiente.
-  </p>
+  <!-- SOBRE -->
+  <section>
+    <h2>Quem somos</h2>
+    <p>
+      A iFlow Brasil é uma consultoria especializada em integrações SAP, com foco em
+      <strong>SAP CPI (Integration Suite)</strong> e <strong>SAP SuccessFactors</strong>.
+      Atuamos conectando sistemas, processos e pessoas de forma clara, eficiente e sustentável,
+      traduzindo complexidade técnica em valor real para o negócio.
+    </p>
+  </section>
 
-  <h2>Serviços</h2>
-  <ul>
-    <li>Integrações SAP SuccessFactors</li>
-    <li>SAP Cloud Platform Integration (CPI)</li>
-    <li>Projetos híbridos e full cloud</li>
-    <li>Suporte e melhorias contínuas</li>
-  </ul>
+  <!-- SERVIÇOS -->
+  <section>
+    <h2>Serviços</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>SAP SuccessFactors</h3>
+        <p>Integrações com sistemas legados, payroll, ERPs e soluções cloud.</p>
+      </div>
 
-  <h2>Contato</h2>
-  <p>
-    LinkedIn: <a href="#" target="_blank">em breve</a><br>
-    Email: contato@iflowbrasil.com.br
-  </p>
-</section>
+      <div class="card">
+        <h3>SAP CPI / Integration Suite</h3>
+        <p>Desenvolvimento e manutenção de integrações cloud e híbridas.</p>
+      </div>
 
-<footer>
-  © 2026 iFlow Brasil
-</footer>
+      <div class="card">
+        <h3>Projetos Cloud & Hybrid</h3>
+        <p>Atuação end-to-end em ambientes Full Cloud e Core Hybrid.</p>
+      </div>
+
+      <div class="card">
+        <h3>Suporte & Evolução</h3>
+        <p>Suporte contínuo, melhorias e evolução sustentável das integrações.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIFERENCIAIS -->
+  <section>
+    <h2>Diferenciais</h2>
+    <div class="grid">
+      <div class="card">
+        <p>✔ Experiência em projetos internacionais e multiculturais</p>
+      </div>
+      <div class="card">
+        <p>✔ Visão técnica aliada ao negócio</p>
+      </div>
+      <div class="card">
+        <p>✔ Comunicação clara entre times técnicos e stakeholders</p>
+      </div>
+      <div class="card">
+        <p>✔ Integrações bem documentadas e sustentáveis</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section>
+    <h2>Contato</h2>
+    <p>
+      📧 Email: <a href="mailto:iflowbrasil@yahoo.com">iflowbrasil@yahoo.com</a><br />
+      🔗 LinkedIn: <a href="https://www.linkedin.com/company/iflowbrasil" target="_blank">
+        linkedin.com/company/iflowbrasil
+      </a>
+    </p>
+  </section>
+
+  <footer>
+    © 2026 iFlow Brasil · Integrações SAP
+  </footer>
 
 </body>
 </html>
+
